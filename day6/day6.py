@@ -7,7 +7,7 @@ def parse_data(f_name):
 
 def part_1_and_2(data:str, n):
     data = list(data)  
-    curr = data[:n] # note, this is unsafe on inputs less than length of 4
+    curr = data[:n] # note, this is unsafe on inputs less than length of n
     data = data[n:]
     marker = n
     is_found = (len(set(curr)) == n)
