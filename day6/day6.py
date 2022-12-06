@@ -1,5 +1,3 @@
-import copy
-
 def parse_data(f_name):
     with open(f_name, 'r') as f:
         data  = f.read()
