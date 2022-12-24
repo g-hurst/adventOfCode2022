@@ -4,7 +4,6 @@ def parse_data(f_name):
     return np.array([[int(n) for n in line.strip()] for line in open(f_name, 'r')], dtype=int)
 
 def part_1(data):
-    total_visible = 0
     marked = np.zeros(data.shape)
     
     for i in range(data.shape[1]):
